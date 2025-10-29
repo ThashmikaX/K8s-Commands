@@ -69,6 +69,9 @@ Convert regular secret to sealed secret using controller (when connected to clus
 ```bash
 kubeseal --controller-name sealed-secrets --controller-namespace secrets --format yaml < secret.yaml > sealed-secret.yaml
 ```
+```bash
+kubeseal --controller-name sealed-secrets --controller-namespace secrets --format yaml --scope cluster-wide < secret.yaml > sealed-secret.yaml
+```
 
 ### Generate Sealed Secret File Using Public Key (.pem)
 

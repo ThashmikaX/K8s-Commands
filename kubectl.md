@@ -34,6 +34,9 @@ kubectl config use-context <context-name>
 
 # View cluster nodes
 kubectl get nodes
+
+# Export current cluster config
+kubectl config view --minify --flatten > cluster-config.yaml
 ```
 
 ## Working with Pods
@@ -273,3 +276,4 @@ kubectl set image deployment/nginx nginx=nginx:1.21
 # Check rollout status
 kubectl rollout status deployment/nginx
 ```
+

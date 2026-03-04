@@ -1,5 +1,22 @@
 # Basic kubectl Commands Reference
 
+## Table of Contents
+- [Cluster Information](#cluster-information)
+- [Working with Pods](#working-with-pods)
+- [Working with Deployments](#working-with-deployments)
+- [Working with Services](#working-with-services)
+- [Working with Namespaces](#working-with-namespaces)
+- [Working with ConfigMaps and Secrets](#working-with-configmaps-and-secrets)
+- [Applying and Managing Resources](#applying-and-managing-resources)
+- [Viewing Resources](#viewing-resources)
+- [Labels and Selectors](#labels-and-selectors)
+- [Debugging and Troubleshooting](#debugging-and-troubleshooting)
+- [Common Resource Shortcuts](#common-resource-shortcuts)
+- [Useful Flags](#useful-flags)
+- [Quick Examples](#quick-examples)
+
+---
+
 ## Cluster Information
 
 ```bash

@@ -89,14 +89,22 @@ helm install capi-operator capi-operator/cluster-api-operator \
 Export all required CAPI/vSphere environment variables. Refer to the [clusterctl vSphere docs](https://github.com/kubernetes-sigs/cluster-api-provider-vsphere) for the full list. Key variables include:
 
 ```bash
-export VSPHERE_SERVER="vcenter.example.com"
-export VSPHERE_DATACENTER="Datacenter"
+export VSPHERE_USERNAME="username"
+export VSPHERE_PASSWORD="password"
+export VSPHERE_SERVER="url"
+export VSPHERE_DATACENTER="datacenter"
 export VSPHERE_DATASTORE="Datastore"
-export VSPHERE_NETWORK="VM Network"
+export VSPHERE_NETWORK="Network"
 export VSPHERE_RESOURCE_POOL="*/Resources"
-export VSPHERE_FOLDER="vm"
-export VSPHERE_TEMPLATE="ubuntu-2004-kube-v1.28.0"
+export VSPHERE_FOLDER="folder-name"
+export VSPHERE_TEMPLATE="photon-5-kube-v1.33.9-SL"
 export CONTROL_PLANE_ENDPOINT_IP="192.168.1.100"
+export VSPHERE_TLS_THUMBPRINT="thumbprint"
+export EXP_CLUSTER_RESOURCE_SET="true"
+export VSPHERE_SSH_AUTHORIZED_KEY="$(cat ~/.ssh/id_rsa.pub)"
+export VSPHERE_STORAGE_POLICY=""
+export CPI_IMAGE_K8S_VERSION="v1.33.0"
+export KUBERNETES_VERSION="1.33.9" 
 # ... add all other required variables
 ```
 
